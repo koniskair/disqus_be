@@ -11,5 +11,6 @@ class Comment(models.Model):
     login = models.CharField(max_length=1000)
     email = models.CharField(max_length=1000)
     message = models.CharField(max_length=1000)
+    picture = models.CharField(max_length=1000)
     pub_date = models.DateTimeField(auto_now_add=timezone.now)
     site = models.ForeignKey(Site)
